@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  -ms-overflow-style: none;
+}
+
+html ::-webkit-scrollbar, body ::-webkit-scrollbar {
+  display: none;
+}
+
+.container-fluid {
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-fluid .headLineSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-fluid .searchBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #393939;
+  min-height: 100px;
+}
+
+.container-fluid .searchBox .searchBox1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  min-height: 100px;
+  border-bottom: 1px solid #999999;
+}
+
+.container-fluid .searchBox .searchBox1 .textWh {
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.container-fluid .searchBox .searchBox1 .navSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-fluid .searchBox .searchBox1 .navSearch .blackInput {
+  background-color: #0e0e0e;
+  outline: none;
+  border: none;
+  color: white;
+  width: 93%;
+  height: 55px;
+  padding-left: 20px;
+}
+
+.container-fluid .searchBox .searchBox1 .navSearch .searchBtn {
+  height: 55px;
+  width: 55px;
+  background-color: #da343c;
+  border: none;
+  position: relative;
+  color: white;
+}
+
+.container-fluid .searchBox .searchBox1 .navSearch .searchBtn::after {
+  content: '';
+  position: absolute;
+  width: 21px;
+  height: 27px;
+  top: 0;
+  left: -20px;
+  -webkit-transform: skew(-40deg);
+          transform: skew(-40deg);
+  background-color: #0e0e0e;
+}
+
+.container-fluid .searchBox .searchBox1 .navSearch::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -7px;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: skew(-45deg);
+          transform: skew(-45deg);
+  background-color: #393939;
+}
+
+.container-fluid .searchBox .searchBox2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s ease-out;
+  transition: max-height 0.4s ease-out;
+}
+
+.container-fluid .searchBox .searchBox2 .pokemonType {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  width: 90%;
+  padding: 0;
+}
+
+.container-fluid .searchBox .searchBox2 .pokemonType li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container-fluid .searchBox .searchBox2 .pokemonType li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.container-fluid .searchBox .searchBox2 .pokemonType li span img {
+  width: 35px;
+  height: 30px;
+}
+
+.container-fluid .searchBox .searchBox2 .searchBtn2 {
+  background-color: #da343c;
+  color: white;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  width: 250px;
+  height: 35px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container-fluid .searchBox .typeSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  position: relative;
+}
+
+.container-fluid .searchBox .typeSearch .typeBtn {
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #393939;
+  color: white;
+}
+
+.container-fluid .mainSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 45px;
+  margin: 45px 0 190px;
+  position: relative;
+  text-align: center;
+}
+
+.container-fluid .mainSection .listBook {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
+}
+
+.container-fluid .mainSection .listBook > li {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 40px 0;
+}
+
+.container-fluid .mainSection .listBook > li .img {
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.container-fluid .mainSection .listBook > li .img .tumbWrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container-fluid .mainSection .listBook > li .img .tumbWrap > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container-fluid .mainSection .listBook > li .img .tumbWrap .img-fluid {
+  width: 100%;
+}
+
+.container-fluid .mainSection .listBook > li .text {
+  position: relative;
+  padding: 10px 18px 0;
+  height: 145px;
+  text-align: left;
+}
+
+.container-fluid .mainSection .listBook > li .text > h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.container-fluid .mainSection .listBook > li .text > h3 > p {
+  margin-bottom: 15px;
+  color: #999;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.container-fluid .mainSection .listBook > li .text > span {
+  position: absolute;
+  bottom: 0;
+  left: 18px;
+  width: 42%;
+}
+
+.container-fluid .mainSection .listBook > li .text > span + span {
+  right: 18px;
+  left: auto;
+}
+
+.container-fluid .mainSection .listBook > li .text [class$='Badge'] {
+  text-align: center;
+  border-radius: 5px;
+  height: 25px;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+}
+
+.container-fluid .mainSection .listBook > li .text .grassBadge {
+  background-color: #7ab766;
+}
+
+.container-fluid .mainSection .listBook > li .text .fireBadge {
+  background-color: #efa061;
+}
+
+.container-fluid .mainSection .listBook > li .text .normalBadge {
+  background-color: #92999f;
+}
+
+.container-fluid .mainSection .listBook > li .text .fightingBadge {
+  background-color: #bc4b6a;
+}
+
+.container-fluid .mainSection .listBook > li .text .flyingBadge {
+  background-color: #95a8d9;
+}
+
+.container-fluid .mainSection .listBook > li .text .poisonBadge {
+  background-color: #a16ec2;
+}
+
+.container-fluid .mainSection .listBook > li .text .groundBadge {
+  background-color: #ca7c50;
+}
+
+.container-fluid .mainSection .listBook > li .text .rockBadge {
+  background-color: #c3b78f;
+}
+
+.container-fluid .mainSection .listBook > li .text .bugBadge {
+  background-color: #9bbf48;
+}
+
+.container-fluid .mainSection .listBook > li .text .ghostBadge {
+  background-color: #5769a7;
+}
+
+.container-fluid .mainSection .listBook > li .text .steelBadge {
+  background-color: #678d9e;
+}
+
+.container-fluid .mainSection .listBook > li .text .waterBadge {
+  background-color: #608fcf;
+}
+
+.container-fluid .mainSection .listBook > li .text .electricBadge {
+  background-color: #edd259;
+}
+
+.container-fluid .mainSection .listBook > li .text .psychicBadge {
+  background-color: #e57879;
+}
+
+.container-fluid .mainSection .listBook > li .text .dragonBadge {
+  background-color: #336cbe;
+}
+
+.container-fluid .mainSection .listBook > li .text .iceBadge {
+  background-color: #8dccc0;
+}
+
+.container-fluid .mainSection .listBook > li .text .darkBadge {
+  background-color: #585365;
+}
+
+.container-fluid .mainSection .listBook > li .text .fairyBadge {
+  background-color: #dc94e1;
+}
+
+.container-fluid .paginationBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  margin-top: -100px;
+}
+/*# sourceMappingURL=style.css.map */
